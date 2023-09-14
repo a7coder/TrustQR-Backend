@@ -28,6 +28,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 app.include_router(qr)
 app.include_router(product)
 
@@ -38,18 +39,3 @@ app.include_router(qr_router)
 @app.get("/api/hello")
 async def root():
     return {"message": "Hello World"}
-
-
-
-
-# # os.system("uvicorn main:app --reload")
-# def main():
-#     print('*********Starting SErver *******************')
-    
-    
-#     # p = project.TokenProject
-#     print('P ',dict(p))
-#     print('hi',auth,prod.)
-
-
-# main()

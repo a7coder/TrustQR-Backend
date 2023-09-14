@@ -18,7 +18,7 @@ def generate_qr(double_encoded_identifier,data):
         box_size=10,
         border=4,
     )
-    url=f'https://trustqr-a7coder.vercel.app//product/qr/{double_encoded_identifier}/{product_id}'
+    url=f'https://trustqr-a7coder.vercel.app/product/qr/{double_encoded_identifier}/{product_id}'
     qr.add_data(url)
     qr.make(fit=True)
 
@@ -31,7 +31,6 @@ def generate_qr(double_encoded_identifier,data):
 
 @qr.post("/generate")
 async def generate_qr_endpoint(request: Request):
-    
     try:
 
         identifier=request.headers.get('Identifier')
