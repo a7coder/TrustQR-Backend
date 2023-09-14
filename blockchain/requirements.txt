@@ -1,0 +1,10 @@
+eth-brownie
+fastapi
+Pillow
+pytest
+pyzbar
+qrcode
+starlette
+uvicorn
+typing_extensions==4.7.1
+py-solc

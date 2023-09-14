@@ -1,0 +1,29 @@
+{
+  "contracts": {
+    "Products": "ef2332180125019350e305faf7184aecd79e444d"
+  },
+  "tests": {
+    "tests/test_add_product.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "f2fa4318b6dcb10654380386ff577ad07f721bb1",
+      "txhash": []
+    },
+    "tests/test_get_detail_product.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "02b54c4652ff73adcb025c0a44b142288121bd39",
+      "txhash": []
+    },
+    "tests/test_list_all_product.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "bb93345935170720f1efc385a170ac330ec23ce0",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}

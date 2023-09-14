@@ -1,0 +1,11 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+# icon: ./icon.png
+app_name: "trustqr"
+micros:
+  - name: simple-fastapi
+    src: ./
+    engine: python3.9
+    public_routes:
+      - "/*"
+    dev: uvicorn main:app  --workers 4

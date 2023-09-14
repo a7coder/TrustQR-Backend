@@ -1,0 +1,21 @@
+dotenv: .env
+networks:
+  default: development
+  settings:
+        gas_limit: 10000000000000000000
+  no_deploy: True
+  sepolia:
+    verify: True
+    gas_limit: max
+  development:
+    verify: False
+    no_deploy: True
+  mainnet-fork:
+    verify: False
+  ganache-local:
+    verify: False
+    no_deploy: True
+
+wallets:
+  from_key: ${PRIVATE_KEY}
+  dummy_key: ${DUMMY_PRIVATE_KEY}
