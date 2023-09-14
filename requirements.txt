@@ -9,3 +9,5 @@ starlette
 uvicorn
 typing_extensions==4.7.1
 py-solc
+zbar-py
+zbar

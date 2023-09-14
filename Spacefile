@@ -6,9 +6,7 @@ micros:
   - name: simple-fastapi
     src: ./
     engine: python3.9
-    commands:
-      - brownie networks add Ethereum sepolia host=https://sepolia.infura.io/v3/8485c6b16a954156ba84a3951cc0ae44 chainid=11155111 explorer=https://api-sepolia.etherscan.io/api
 
     public_routes:
       - "/*"
-    dev: uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+    dev: brownie networks add Ethereum sepolia host=https://sepolia.infura.io/v3/8485c6b16a954156ba84a3951cc0ae44 chainid=11155111 explorer=https://api-sepolia.etherscan.io/api && uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
