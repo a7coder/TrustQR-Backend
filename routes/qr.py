@@ -39,7 +39,7 @@ async def generate_qr_endpoint(request: Request):
         double_encoded_identifier=sha256.hexdigest()
 
         # Add this Check !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        if isUser(identifier)==False:
+        if isUser(identifier,request.app.state.Authentication)==False:
             return  {
                 "success": "false",
                 "error": "You aren't Authorised"
