@@ -47,3 +47,8 @@ def get_account(index=None, id=None):
 #         contract=Products[-1]
 #     print('Product ',contract)
 #     return contract
+
+
+# def main():
+#     deploy_products()
+#     deploy_user()
